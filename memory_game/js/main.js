@@ -34,11 +34,12 @@ function createBoard() {
  	}
 }
 function checkForMatch() {
-	if (cardsInPlay[1] === cardsInPlay[2]) {
-		alert("You found a match!"); 
+	if (cardsInPlay[0] === cardsInPlay[1]) {
+	alert("You found a match!"); 
 	} else {
 		alert("Sorry, try again.");
 	}
+}
 //flip card and check pair
 function flipCard() {
 	var cardId = this.getAttribute('data-id');
@@ -48,7 +49,7 @@ function flipCard() {
 	console.log("User flipped" + cards[cardId].cardImage);
 	console.log("User flipped" + cards[cardId].suit);
 }
-		if (cardsInPlay.length === 2); {
+	if (cardsInPlay.length === 2); {
 			if (cardsInPlay[0] === cardsInPlay[1]) {
 		 checkForMatch();
 		}
